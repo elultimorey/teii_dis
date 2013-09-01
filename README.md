@@ -1,4 +1,2 @@
-teii_dis
-========
-
-Introducción a Octave, usando Latex y Git
+Trabajo de la parte de DIS de la asignatura TEII
+================================================

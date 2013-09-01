@@ -1,0 +1,168 @@
+\documentclass[a4,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=1.5cm]{geometry}
+
+\begin{document}
+
+\section{Introducción}
+GNU Octave es un lenguaje de alto nivel destinado para el cálculo numérico, sólo opera con números. Provee una interfaz sencilla, orientada a la línea de comandos (consola), que permite la resolución de problemas numéricos, lineales y no lineales, además permite la ejecución de scripts y puede ser usado como lenguaje orientado al procesamiento por lotes.
+
+Octave nació alrededor del año 1988, y fue concebido originalmente para ser usado en un curso de diseño de reactores químicos. El desarrollo real de comenzó en 1992. La primera alfa fué publicada en 1993, y en 1997 se publicó la versión 1.0.
+
+\section{Iniciar y salir de Octave}
+Para iniciar octave hay que ejecutar la instrucción \emph{octave} en una consola. Aparecerá la siguiente ventana:
+\begin{verbatim}
+GNU Octave, version 3.6.2
+Copyright (C) 2012 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Read http://www.octave.org/bugs.html to learn how to submit bug reports.
+
+For information about changes from previous versions, type `news'.
+
+octave:1>
+\end{verbatim}
+
+Para salir de octave usaremos el comando \emph{quit} o \emph{exit}.
+
+\subsection{Instrucciones de utilidad}
+\begin{itemize}
+\item$>$pwd: para mostrar el directorio en el que nos encontramos.
+\item$>$ls: para mostrar una lista de los ficheros y los directorios del directorio actual.
+\item$>$cd ruta: para cambiar de directorio.
+\item$>>$cd ..: para ir al directorio padre.
+\item$>$diary: volcar lo mostrado en el transcurso de la ejecución del programa al fichero ‘diary’ de la carpeta por defecto.
+\item$>>$diary fichero: el fichero ‘diary’ se guardará en el fichero indicado.
+\item$>>$diary off: para el guardado.
+\item$>$help comando: muestra la ayuda sobre el comando indicado.
+\item$>$history: muestra una lista con los comandos ejecutados.
+\item$>$save archivo: guardar la sesión en un archivo.
+\item$>$load archivo: cargar la sesión del archivo.
+\end{itemize}
+Los comandos pueden recuperarse con la \emph{flecha hacia arriba}, o escribiendo el inicio del comando y pulsar la \emph{flecha hacia arriba}, y navegar por los comandos ejecutados.
+\subsection{Operaciones básicas}
+\begin{itemize}
+\item= \emph{asignacion}
+\item+ \emph{suma}
+\item- \emph{resta}
+\item* \emph{multiplicación}
+\item.* \emph{multiplicación de matrices elemento por elemento (deben coincidir el número de columnas con el número de filas)}
+\item/ \emph{división derecha}
+\item exp \emph{exponencial}
+\item log \emph{logaritmo neperiano}
+\item log10 \emph{logaritmo base 10}
+\item sin \emph{seno}
+\item cos \emph{coseno}
+\item abs \emph{valor absoluto}
+\item sqrt \emph{raíz cuadrada}
+\item round \emph{redondeo al entero más cercano}
+\item floor \emph{redondea por defecto}
+\item ceil \emph{redondea por exceso}
+\item ' \emph{transpuesta}
+\end{itemize}
+\section{Variables}
+Podemos asignar variables con determinados nombres a las expresiones numéricas (números, constantes). Los nombres son sensibles a mayúsulas y minúsculas, el máximo de caracteres que deben tener es de 31 caracteres, deben empezar or una letra y pueden contener letras, números y el símbolo '\_'. Las variables se crean escribiendo el nombre que le queramos dar y asignándole el valor con el operador de asignación. El acceso a la variable se realiza escribiendo el nombre asignado.
+\begin{verbatim}
+>a=1/3
+\end{verbatim}
+Cuando se asigna otro valor se machaca en anterior
+\begin{verbatim}
+>a=1/3
+>a=1/6
+>a
+a=0.16667
+\end{verbatim}
+Las variables creadas se guardan en una lista de variables.
+\begin{itemize}
+\item>whos: obtener la lista de vaiables guardadas.
+\end{itemize}
+Las variables guardadas pueden ser borradas.
+\begin{itemize}
+\item$>$clear: borra todas las varianles
+\item$>>$clear a: borra la variable indiaca (en este caso a).
+\end{itemize}
+Pueden colocarse varios comandos en una misma línea separándolos con ',', si no se quiere que se muestre el resultado de algún comando se finaliza el comando con ';'.
+
+Se permiten comentarios, de gran ayuda a la hora de realizar scripts para ejecutar.
+\begin{itemize}
+\item\% línea de comentario, todo lo que esté a su derecha se considera comentario.
+\end{itemize}
+Se puede extender un comando a más de una línea con '...'.
+\begin{verbatim}
+>esto\_es\_muy\_largo...
+>=17
+esto\_es\_muy\_largo = 17
+\end{verbatim}
+\subsection{Variables predefinidas}
+\begin{itemize}
+\item ans último resultado
+\item pi = 3.1416
+\item e = 2.7183
+\item i, j número imaginario
+\item Inf infinito
+\item NaN indeterminado
+\end{itemize}
+\section{Vectores}
+Un vector es definido como un conjunto de datos a los cuales se accede por medio de índices. Es una matriz de una dimensión.
+
+La forma en la que octave se definen vectores es utilizando corchete []. Los elementos de una fila se separan con un espacio ' ' o una coma ','.
+\begin{verbatim}
+> v= [1,2,3,5,7,11]
+v =
+
+    1    2    3    5    7   11
+\end{verbatim}
+Las columnas por su parte se separan mediante puntos y comas ';'.
+\begin{verbatim}
+> w= [1;2;3;5;7;11]
+w =
+
+    1
+    2
+    3
+    5
+    7
+   11
+\end{verbatim}
+\subsection{Secuencias}
+En octave podemos crear vectores de secuencas utilizando los dos puntos, p:q:r, donde p sería el valor en el que se iniciaría la secuencia, \emph{r} el valor final y \emph{q} el intervalo. El valor \emph{q} es opcional y si se obvía el intervalo por defecto es 1.
+\begin{verbatim}
+> 1:10
+ans =
+
+    1    2    3    4    5    6    7    8    9   10
+> 1:2:10
+ans =
+
+    1    3    5    7    9
+\end{verbatim}
+Además hay otras dos funciones para crear vectores con secuencias separadas x valores, \emph{linspace} y \emph{logspace}. El primero separa los números uniformemente y el segundo logarítmicamente.
+\begin{verbatim}
+> linspace(0,15,6)
+ans =
+
+    0    3    6    9   12   15
+\end{verbatim}
+Hay dos funciones especiales para crear filas o columnas de unos o ceros, \emph{ones} y \emph{zeros}
+\begin{verbatim}
+> ones(1,5)
+ans =
+
+   1   1   1   1   1
+\end{verbatim}
+\subsection{Funciones sobre vectores}
+\begin{itemize}
+\item length \emph{devuelve la longitud del vector}
+\end{itemize}
+\end{document}
