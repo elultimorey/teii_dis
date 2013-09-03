@@ -184,6 +184,8 @@ ans =
    3   0  -2
 \end{verbatim}
 Se pueden realizar operaciones entre matrices como su suma de matrices \emph{(M+N)}, resta de matrices \emph{(M-N)}, multiplicación de matrices \emph{(M*N)\footnote{M debe tener el mismo número de colúmnas que N.}}, multiplicación elemento a elemento \emph{(M.*N)\footnote{Aunque no tiene mucho sentido a la hora de trabajar con matrices en el cálculo numérico si que puede ser útil si se consideran las matrices con datos ordenados en forma matricial.}}, calcular su matriz inversa \emph{inv(M)}, potenciación o divisiones izquierda y derecha.
+
+A los elementos de vectores y matrices se puede acceder por índice, esto es por su posición en el mismo. El índice empieza por 1, siendo V(1) el primer elemento en el caso de los vectores y M(1,1) el primero en el caso de las matrices. Se puede obtener una partde de un vector indicando los índices con V(2:5). Así como también se puede obetener una fila de una matriz sin seleccionar la columna del elemento del indice y poniéndola con ':', por ejemplo: M(2,:) nos devolvería el vector de la fila 2.
 \subsection{Resolución de ecuaciones}
 En octave se pueden resolver sistemas de ecuaciones de una forma sencilla utilizando matrices.
 
