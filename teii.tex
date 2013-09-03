@@ -165,4 +165,55 @@ ans =
 \begin{itemize}
 \item length \emph{devuelve la longitud del vector}
 \end{itemize}
+\section{Matrices}
+Las matrices se introducen por filas, cuyos elementos se separan con ' ' o ',', y que se separan unas de otras con ';'.
+\begin{verbatim}> M=[1 2 3; 6 2 0; 0 1 -2]
+M =
+
+   1   2   3
+   6   2   0
+   0   1  -2
+\end{verbatim}
+La transpuesta de esta matriz se realizaría fácilmente con el simbolo de trasposición M'.
+\begin{verbatim}
+> M'
+ans =
+
+   1   6   0
+   2   2   1
+   3   0  -2
+\end{verbatim}
+Se pueden realizar operaciones entre matrices como su suma de matrices \emph{(M+N)}, resta de matrices \emph{(M-N)}, multiplicación de matrices \emph{(M*N)\footnote{M debe tener el mismo número de colúmnas que N.}}, multiplicación elemento a elemento \emph{(M.*N)\footnote{Aunque no tiene mucho sentido a la hora de trabajar con matrices en el cálculo numérico si que puede ser útil si se consideran las matrices con datos ordenados en forma matricial.}}, calcular su matriz inversa \emph{inv(M)}, potenciación o divisiones izquierda y derecha.
+\subsection{Resolución de ecuaciones}
+En octave se pueden resolver sistemas de ecuaciones de una forma sencilla utilizando matrices.
+
+Partiendo de las dos ecuaciones:
+\begin{displaymath}
+ax+by=c
+\end{displaymath} 
+\begin{displaymath} 
+dx+ey=f
+\end{displaymath} 
+Construimos las matrices siguiente:
+\begin{verbatim}
+> a=[a b;d e]
+a =
+
+   a   b
+   d   e
+
+> b=[f;c]
+b =
+
+   c
+   f
+\end{verbatim}
+Donde en la primera matriz colocamos los coeficientes que acompañan a las incógnitas, si en una encuación no aparece una incognita pondremos un 0 en su posición en la matriz. Y en la segunda pondremos los valores de la parte derecha de las ecuaciones. Finalmente el sistema se resolvería:
+\begin{verbatim}
+> res=a\b
+res =
+
+   X
+   Y
+\end{verbatim}
 \end{document}
