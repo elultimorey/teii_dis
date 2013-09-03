@@ -216,4 +216,57 @@ res =
    X
    Y
 \end{verbatim}
+\section{Scripts en octave}
+Los scripts en Octave son archivos con extensión \emph{.m}. Octave es un programa para el cálculo numérico, por lo que las posibilidades de los scripts son limitadas. Aún así el programa nos da la posibilidad de utilizar operadores lógicos, condiciones, funciones y bucles.
+\subsection{Operadores lógicos}
+Los operadores lógicos permitidos son:
+\begin{center}
+\&, |, \~~
+\end{center} 
+que corresponden a and, or y negación respectivamente.
+\subsection{Condiciones}
+\subsubsection{IF}
+\begin{verbatim}
+            IF condición1
+                cuerpo1
+            ELSEIF condición2
+                cuerpo2
+            ELSE
+                cuerpo3
+            ENDIF
+\end{verbatim} 
+\subsubsection{SWITCH}
+\begin{verbatim}
+            SWITCH expresión
+            CASE etiqueta1
+                listadecomandos1
+            CASE etiqueta2
+                listadecomandos2
+             ... 
+            OTHERWISE
+                listadecomandosFinal
+            ENDSWITCH 
+\end{verbatim}
+\subsection{Bucles}
+\subsubsection{FOR}
+\begin{verbatim}
+            FOR var = expresión
+                cuerpo
+            ENDFOR
+\end{verbatim}
+\subsubsection{DO-UNITL}
+\begin{verbatim}
+            DO
+                cuerpo
+            UNTIL (condición)
+\end{verbatim}
+\subsubsection{WHILE}
+\begin{verbatim}
+            WHILE (condicion)
+                cuerpo
+            ENDWHILE
+\end{verbatim}
+\subsection{Funciones}
+
+
 \end{document}
