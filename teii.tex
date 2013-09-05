@@ -1,8 +1,9 @@
-\documentclass[a4,12pt]{article}
+\documentclass[a4,12pt,graphicx,caption,rotating]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage[margin=1.5cm]{geometry}
+\usepackage[activeacute,spanish]{babel}
 
 \begin{document}
 
@@ -217,6 +218,8 @@ res =
    Y
 \end{verbatim}
 \section{Scripts en octave}
+Para explicar esta parte voy a suponer que se tienen unos conocimientos básicos de programación, ya que no es este documento el lugar donde explicar IFs, bucles, funciones, etc... por lo que únicamente mostraré la forma de utlizarlos en octave.
+
 Los scripts en Octave son archivos con extensión \emph{.m}. Octave es un programa para el cálculo numérico, por lo que las posibilidades de los scripts son limitadas. Aún así el programa nos da la posibilidad de utilizar operadores lógicos, condiciones, funciones y bucles.
 \subsection{Operadores lógicos}
 Los operadores lógicos permitidos son:
@@ -267,6 +270,20 @@ que corresponden a and, or y negación respectivamente.
             ENDWHILE
 \end{verbatim}
 \subsection{Funciones}
+\begin{verbatim}
+            FUNCTION [salida1, salida2] = nombre_funcion (argumentos)
+              cuerpo
+            ENDFUNCTION
+\end{verbatim}
 
+Estas funciones además de en un script se pueden definir en una consola ejecutando octave y utilizarlas posteriormente utilizando su nombre como si de una función predefinida por octave se tratase.
+\subsection{Recoger información del usuario}
+Si queremos que el usuario aporte alguna información para el cálculo debemos ejecutar el comando \emph(input).
+\begin{verbatim}
+            kilometros = input('Introduzca los kilometros recorridos: ');
+\end{verbatim}
+\subsection{Ejecución}
+Para ejecutar un programa en octave debemos arrancar el programa en una consola y escribir el nombre del script en la consola de octave.
+\section{Bibliografía}
 
 \end{document}
