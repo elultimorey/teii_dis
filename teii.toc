@@ -1,24 +1,25 @@
 \select@language {spanish}
-\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{2}
-\contentsline {section}{\numberline {2}Iniciar y salir de Octave}{2}
-\contentsline {subsection}{\numberline {2.1}Instrucciones de utilidad}{2}
-\contentsline {subsection}{\numberline {2.2}Operaciones b\IeC {\'a}sicas}{3}
-\contentsline {section}{\numberline {3}Variables}{4}
-\contentsline {subsection}{\numberline {3.1}Variables predefinidas}{4}
-\contentsline {section}{\numberline {4}Vectores}{5}
-\contentsline {subsection}{\numberline {4.1}Secuencias}{5}
-\contentsline {subsection}{\numberline {4.2}Funciones sobre vectores}{6}
-\contentsline {section}{\numberline {5}Matrices}{6}
-\contentsline {subsection}{\numberline {5.1}Resoluci\IeC {\'o}n de ecuaciones}{6}
-\contentsline {section}{\numberline {6}Scripts en octave}{7}
-\contentsline {subsection}{\numberline {6.1}Operadores l\IeC {\'o}gicos}{7}
-\contentsline {subsection}{\numberline {6.2}Condiciones}{7}
-\contentsline {subsubsection}{\numberline {6.2.1}IF}{7}
-\contentsline {subsubsection}{\numberline {6.2.2}SWITCH}{7}
-\contentsline {subsection}{\numberline {6.3}Bucles}{8}
-\contentsline {subsubsection}{\numberline {6.3.1}FOR}{8}
-\contentsline {subsubsection}{\numberline {6.3.2}DO-UNITL}{8}
-\contentsline {subsubsection}{\numberline {6.3.3}WHILE}{8}
-\contentsline {subsection}{\numberline {6.4}Funciones}{8}
-\contentsline {subsection}{\numberline {6.5}Recoger informaci\IeC {\'o}n del usuario}{8}
-\contentsline {subsection}{\numberline {6.6}Ejecuci\IeC {\'o}n}{8}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{2}{section.1}
+\contentsline {section}{\numberline {2}Iniciar y salir de Octave}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Instrucciones de utilidad}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Operaciones b\IeC {\'a}sicas}{3}{subsection.2.2}
+\contentsline {section}{\numberline {3}Variables}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Variables predefinidas}{4}{subsection.3.1}
+\contentsline {section}{\numberline {4}Vectores}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}Secuencias}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Funciones sobre vectores}{6}{subsection.4.2}
+\contentsline {section}{\numberline {5}Matrices}{6}{section.5}
+\contentsline {subsection}{\numberline {5.1}Resoluci\IeC {\'o}n de ecuaciones}{6}{subsection.5.1}
+\contentsline {section}{\numberline {6}Scripts en octave}{7}{section.6}
+\contentsline {subsection}{\numberline {6.1}Operadores l\IeC {\'o}gicos}{7}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Condiciones}{7}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}IF}{7}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}SWITCH}{8}{subsubsection.6.2.2}
+\contentsline {subsection}{\numberline {6.3}Bucles}{8}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}FOR}{8}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}DO-UNITL}{8}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}WHILE}{8}{subsubsection.6.3.3}
+\contentsline {subsection}{\numberline {6.4}Funciones}{8}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Recoger informaci\IeC {\'o}n del usuario}{8}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Ejecuci\IeC {\'o}n}{8}{subsection.6.6}
+\contentsline {section}{\numberline {7}Bibliograf\IeC {\'\i }a}{9}{section.7}
