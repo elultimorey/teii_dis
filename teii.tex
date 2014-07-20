@@ -318,13 +318,26 @@ Los datos del tiempo de ejecución del caso del tamaño de la población están 
 Y la gráfica tamaño tiempo la obtenemos en octave ejecutando:
 \begin{verbatim}
             popsize = load("popsize.txt");
-            plot (popsize (:,1), data (:,2));
+            plot (popsize (:,1), popsize (:,2));
 \end{verbatim}
-
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.5\textwidth]{graph/}
+\end{center}
+\caption{Grafo del tiempo de ejecución según el tamaño de población}
+\label{fig:popsize}
+\end{figure}
 Los datos del tiempo de ejecución del caso del número de generaciones están en ngen.txt.
 Y la gráfica número de generaciones tiempo la obtenemos en octave ejecutando:
 \begin{verbatim}
             ngen = load("ngen.txt");
-            plot (ngen (:,1), data (:,2));
+            plot (ngen (:,1), ngen (:,2));
 \end{verbatim}
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.5\textwidth]{graph/}
+\end{center}
+\caption{Grafo del tiempo de ejecución según el número de generaciones}
+\label{fig:ngen}
+\end{figure}
 \end{document}
