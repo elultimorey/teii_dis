@@ -311,4 +311,20 @@ Si queremos que el usuario aporte alguna información para el cálculo debemos e
 \subsection{Ejecución}
 Para ejecutar un programa en octave debemos arrancar el programa en una consola y escribir el nombre del script en la consola de octave.
 
+\section{Grafos en octave}
+Para la asignatura de Sistemas Inteligentes hemos realizado una práctica para planificar y programar el trabajo de un taladro perforador automático para que realice su trabajo en un tiempo mínimo y así, poder realizar el mayor número de placas perforadas en un tiempo dado.
+En el algoritmo genético que utilizamos para resolver el problema debemos modificar las variables del tamaño de la población y del número de generaciones para ver como interceden en la mejora de la solución obtenida, pero aumentar el valor de estas variables conlleva un aumento del tiempo de ejecución del algoritmo.
+Los datos del tiempo de ejecución del caso del tamaño de la población están en popsize.txt.
+Y la gráfica tamaño tiempo la obtenemos en octave ejecutando:
+\begin{verbatim}
+            popsize = load("popsize.txt");
+            plot (popsize (:,1), data (:,2));
+\end{verbatim}
+
+Los datos del tiempo de ejecución del caso del número de generaciones están en ngen.txt.
+Y la gráfica número de generaciones tiempo la obtenemos en octave ejecutando:
+\begin{verbatim}
+            ngen = load("ngen.txt");
+            plot (ngen (:,1), data (:,2));
+\end{verbatim}
 \end{document}
