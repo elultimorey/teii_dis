@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage[margin=1.5cm]{geometry}
+\usepackage{graphicx}
 \usepackage{hyperref}
 
 \begin{document}
@@ -320,13 +321,15 @@ Y la gráfica tamaño tiempo la obtenemos en octave ejecutando:
             popsize = load("popsize.txt");
             plot (popsize (:,1), popsize (:,2));
 \end{verbatim}
+La gráfica resultante se puede ver en la figura 1 \ref{popsize}.
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=0.5\textwidth]{graph/}
+\includegraphics[width=0.9\textwidth]{graph/popsize}
 \end{center}
 \caption{Grafo del tiempo de ejecución según el tamaño de población}
 \label{fig:popsize}
 \end{figure}
+
 Los datos del tiempo de ejecución del caso del número de generaciones están en ngen.txt.
 Y la gráfica número de generaciones tiempo la obtenemos en octave ejecutando:
 \begin{verbatim}
@@ -335,9 +338,10 @@ Y la gráfica número de generaciones tiempo la obtenemos en octave ejecutando:
 \end{verbatim}
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=0.5\textwidth]{graph/}
+\includegraphics[width=0.9\textwidth]{graph/ngen}
 \end{center}
 \caption{Grafo del tiempo de ejecución según el número de generaciones}
 \label{fig:ngen}
 \end{figure}
+La gráfica resultante se puede ver en la figura 2 \ref{ngen}.
 \end{document}
