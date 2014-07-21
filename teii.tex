@@ -15,7 +15,7 @@
  
 {\Large Grado en Ingeniería en Informática}\\[2cm]
  
-{\Large Curso 2012-2013}\\[3cm]
+{\Large Curso 2013-2014}\\[3cm]
  
 {\Huge Trabajo parte DIS}\\
  
@@ -36,7 +36,7 @@
 GNU Octave es un lenguaje de alto nivel destinado para el cálculo numérico, sólo opera con números. Provee una interfaz sencilla, orientada a la línea de comandos (consola), que permite la resolución de problemas numéricos, lineales y no lineales, además permite la ejecución de scripts y puede ser usado como lenguaje orientado al procesamiento por lotes.
 
 Octave nació alrededor del año 1988, y fue concebido originalmente para ser usado en un curso de diseño de reactores químicos. El desarrollo real de comenzó en 1992. La primera alfa fué publicada en 1993, y en 1997 se publicó la versión 1.0.
-
+\cite{iniOctave}
 \section{Iniciar y salir de Octave}
 Para iniciar octave hay que ejecutar la instrucción \emph{octave} en una consola. Aparecerá la siguiente ventana:
 \begin{verbatim}
@@ -315,13 +315,13 @@ Para ejecutar un programa en octave debemos arrancar el programa en una consola 
 \section{Grafos en octave}
 Para la asignatura de Sistemas Inteligentes hemos realizado una práctica para planificar y programar el trabajo de un taladro perforador automático para que realice su trabajo en un tiempo mínimo y así, poder realizar el mayor número de placas perforadas en un tiempo dado.
 En el algoritmo genético que utilizamos para resolver el problema debemos modificar las variables del tamaño de la población y del número de generaciones para ver como interceden en la mejora de la solución obtenida, pero aumentar el valor de estas variables conlleva un aumento del tiempo de ejecución del algoritmo.
-Los datos del tiempo de ejecución del caso del tamaño de la población están en popsize.txt.
+Los datos del tiempo de ejecución del caso del tamaño de la población están en popsize.txt.\cite{uno}
 Y la gráfica tamaño tiempo la obtenemos en octave ejecutando:
 \begin{verbatim}
             popsize = load("popsize.txt");
             plot (popsize (:,1), popsize (:,2));
 \end{verbatim}
-La gráfica resultante se puede ver en la figura 1 \ref{popsize}.
+La gráfica resultante se puede ver en la figura 1.
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=0.9\textwidth]{graph/popsize}
@@ -343,8 +343,21 @@ Y la gráfica número de generaciones tiempo la obtenemos en octave ejecutando:
 \caption{Grafo del tiempo de ejecución según el número de generaciones}
 \label{fig:ngen}
 \end{figure}
-La gráfica resultante se puede ver en la figura 2 \ref{ngen}.
+La gráfica resultante se puede ver en la figura 2.
+\begin{thebibliography}{X}
+	\bibitem{1} \textsc{Jose Maria Valiente Cifuentes},
+		\textit{Manual de iniciación a GNU Octave}
+		\url{http://softlibre.unizar.es/manuales/aplicaciones/octave/manual_octave.pdf}
+	\bibitem{2} \textsc{Barry O'Donovan},
+		\textit{GNU Octave - An Introduction}
+		\url{http://linuxgazette.net/109/odonovan.html}
+	\bibitem{3}
+		\textit{Octave Programming Tutorial/Vectors and matrices}
+		\url{http://en.wikibooks.org/wiki/Octave_Programming_Tutorial/Vectors_and_matrices}
+	\bibitem{4}
+		\textit{Octave-Forge}
+		\url{http://octave.sourceforge.net/}
 
-\bibliographystyle{plain}
-\bibliography{referencias}
+}
+\end{thebibliography}
 \end{document}
